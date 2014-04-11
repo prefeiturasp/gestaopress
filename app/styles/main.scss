@@ -1,28 +1,40 @@
-body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserratalternates-regular-webfont.eot');
+    src: url('fonts/montserratalternates-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserratalternates-regular-webfont.woff') format('woff'),
+         url('fonts/montserratalternates-regular-webfont.ttf') format('truetype'),
+         url('fonts/montserratalternates-regular-webfont.svg#montserrat_alternatesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Dosis';
+    src: url('fonts/dosis-regular-webfont.eot');
+    src: url('fonts/dosis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dosis-regular-webfont.woff') format('woff'),
+         url('fonts/dosis-regular-webfont.ttf') format('truetype'),
+         url('fonts/dosis-regular-webfont.svg#dosisregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
-    h1 {
-        font-size: 60px;
-        line-height: 1;
-        letter-spacing: -1px;
+@import "config";
+@import "../bower_components/foundation/scss/normalize";
+@import "../bower_components/foundation/scss/foundation";
+
+.top-head {
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+}
+
+.project-menu {
+    background-color: #f8f8f9;
+
+    .label {
+        background-color: #f1f1f2;
+        color: #000;
     }
-}
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
 }

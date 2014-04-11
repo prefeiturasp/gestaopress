@@ -7,7 +7,8 @@
         <meta charset="utf-8">
         <title>gestaopress</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
@@ -27,21 +28,138 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <div class="top-head">
+            <div class="row">
+                <div class="small-6 columns">
+                    <img src="/images/logo-sp-aberta.svg" class="logo sp-aberta" alt="Logo da São Paulo Aberta">
+                    <img src="/images/logo-prefeitura.svg" class="logo prefeitura" alt="Logo da Prefeitura">
+                </div>
+                <div class="small-2 columns">
+                    <form action="">
+                        <p>receba notícias</p>
+                        <input type="text" name="email" id="email" />
+                    </form>
+                </div>
+                <div class="small-4 columns">
+                    <p>siga nas redes sociais</p>
+                    <div class="fb-like" data-href="http://saopauloaberta.com.br" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
 
-        <div class="hero-unit">
-          <h1>'Allo, 'Allo!</h1>
-          <p>You now have</p>
-          <ul>
-            <li>HTML5 Boilerplate</li>
-            <li>Sass with Compass</li>
-            <li>Modernizr</li>
-            <li>RequireJS</li>
-          </ul>
+                    <a href="https://twitter.com/spaberta" class="twitter-follow-button" data-show-count="false" data-lang="pt" data-show-screen-name="false">Seguir @spaberta</a>
+
+                    <div class="g-ytsubscribe" data-channel="spaberta"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu row">
+            <div class="small-12 columns small-centered text-center">
+                <ul class="inline-list">
+                    <li>
+                        <a href="">entenda</a>
+                        <ul>
+                            <li><a href="">entenda mais</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">notícias</a></li>
+                    <li><a href="">agenda</a></li>
+                    <li><a href="">biblioteca</a></li>
+                    <li><a href="">contato</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-menu">
+            <div class="row">
+                <div class="small-1 columns label">
+                    <p>projetos:</p>
+                </div>
+                <div class="small-3 columns">
+                    <style>.project-1 li a { color: #F05A28; }</style>
+                    <ul class="project-1 text-center">
+                        <li>
+                            <a href="">Projeto Mãe</a>
+                            <ul>
+                                <li><a href="">Sub projeto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="small-3 columns">
+                    <style>.project-2 li a { color: #F7931D; }</style>
+                    <ul class="project-2 text-center">
+                        <li>
+                            <a href="">Projeto Mãe</a>
+                            <ul>
+                                <li><a href="">Sub projeto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="small-3 columns">
+                    <style>.project-3 li a { color: #CCCC00; }</style>
+                    <ul class="project-3 text-center">
+                        <li>
+                            <a href="">Projeto Mãe</a>
+                            <ul>
+                                <li><a href="">Sub projeto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="small-3 columns">
+                    <style>.project-4 li a { color: #38B449; }</style>
+                    <ul class="project-4 text-center">
+                        <li>
+                            <a href="">Projeto Mãe</a>
+                            <ul>
+                                <li><a href="">Sub projeto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="featured-content">
+            <ul class="example-orbit" data-orbit>
+                <li>
+                    <img src="http://placehold.it/1500x470" alt="slide 1" />
+                    <div class="orbit-caption">
+                    Caption One.
+                    </div>
+                </li>
+                <li class="active">
+                    <img src="http://placehold.it/1500x470" alt="slide 2" />
+                    <div class="orbit-caption">
+                    Caption Two.
+                    </div>
+                </li>
+                <li>
+                    <img src="http://placehold.it/1500x470" alt="slide 3" />
+                    <div class="orbit-caption">
+                    Caption Three.
+                    </div>
+                </li>
+            </ul>
         </div>
 
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
         <!-- endbuild -->
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=195247740668330";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <script src="https://apis.google.com/js/platform.js"></script>
+
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </body>
 </html>
