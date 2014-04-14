@@ -2,7 +2,13 @@ require.config({
     paths: {
         jquery     : '../bower_components/jquery/dist/jquery',
         foundation : '../bower_components/foundation/js/foundation'
-}
+    },
+
+    shim : {
+        'foundation' : {
+            deps: ['jquery']
+        }
+    }
 });
 
 require(['app', 'jquery', 'foundation'], function (app, jQuery) {
@@ -10,5 +16,5 @@ require(['app', 'jquery', 'foundation'], function (app, jQuery) {
     // use app here
     console.log(app);
     console.log('Running jQuery %s', jQuery().jquery);
-    $(document).foundation();
+    jQuery(document).foundation();
 });
