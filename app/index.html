@@ -52,7 +52,7 @@
             </div>
         </div>
 
-        <div class="main menu section row">
+        <div class="main-menu section row">
             <div class="small-12 columns small-centered text-center">
                 <ul class="menu">
                     <li>
@@ -70,68 +70,73 @@
         </div>
         <style>
         /* cores do menu de projetos */
-        .project-1 li a { color: #F05A28; }
-        .project-2 li a { color: #F7931D; }
-        .project-3 li a { color: #CCCC00; }
-        .project-4 li a { color: #38B449; }
-        .project-5 li a { color: #bbb; }
+        .project-1 li a,
+        .project-1 li ul li:before { color: #F05A28; }
+        .project-2 li a,
+        .project-2 li ul li:before { color: #F7931D; }
+        .project-3 li a,
+        .project-3 li ul li:before { color: #CCCC00; }
+        .project-4 li a,
+        .project-4 li ul li:before { color: #38B449; }
+        .project-5 li a,
+        .project-5 li ul li:before { color: #bbb; }
 
         .label.project-1 { background-color: #fff; border-color: #F05A28; color: #F05A28; }
         .label.project-2 { background-color: #fff; border-color: #F7931D; color: #F7931D; }
 
         </style>
-        <div class="project menu section">
-            <div class="row">
-                <div class="small-2 columns title-section">
+        <div class="project-menu section">
+            <div class="row" data-equalizer>
+                <div class="small-2 columns title-section" data-equalizer-watch>
                     <p>projetos:</p>
                 </div>
-                <div class="small-2 columns">
-                    <ul class="project-1 text-center">
+                <div class="small-2 columns" data-equalizer-watch>
+                    <ul class="project-1 main-project">
                         <li>
                             <a href="">Projeto Mãe</a>
-                            <ul>
+                            <ul class="subs">
                                 <li><a href="">Sub projeto</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="small-2 columns">
-                    <ul class="project-2 text-center">
+                <div class="small-2 columns" data-equalizer-watch>
+                    <ul class="project-2 main-project">
                         <li>
                             <a href="">Projeto Mãe</a>
-                            <ul>
+                            <ul class="subs">
                                 <li><a href="">Sub projeto</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="small-2 columns">
-                    <ul class="project-3 text-center">
+                <div class="small-2 columns" data-equalizer-watch>
+                    <ul class="project-3 main-project">
                         <li>
                             <a href="">Projeto Mãe</a>
-                            <ul>
-                                <li><a href="">Sub projeto</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="small-2 columns">
-                    <ul class="project-4 text-center">
-                        <li>
-                            <a href="">Projeto Mãe</a>
-                            <ul>
+                            <ul class="subs">
                                 <li><a href="">Sub projeto</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
 
-                <div class="small-2 columns">
-                    <ul class="project-5 text-center">
+                <div class="small-2 columns" data-equalizer-watch>
+                    <ul class="project-4 main-project">
                         <li>
                             <a href="">Projeto Mãe</a>
-                            <ul>
+                            <ul class="subs">
+                                <li><a href="">Sub projeto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="small-2 columns" data-equalizer-watch>
+                    <ul class="project-5 main-project">
+                        <li>
+                            <a href="">Projeto Mãe</a>
+                            <ul class="subs">
                                 <li><a href="">Sub projeto</a></li>
                             </ul>
                         </li>
@@ -141,24 +146,15 @@
         </div>
 
         <div class="featured-content">
-            <ul class="example-orbit" data-orbit>
+            <ul data-orbit data-options="bullets:false;slide_number:false;">
                 <li>
                     <img src="http://placehold.it/1500x470" alt="slide 1" />
-                    <div class="orbit-caption">
-                    Caption One.
-                    </div>
                 </li>
                 <li class="active">
                     <img src="http://placehold.it/1500x470" alt="slide 2" />
-                    <div class="orbit-caption">
-                    Caption Two.
-                    </div>
                 </li>
                 <li>
                     <img src="http://placehold.it/1500x470" alt="slide 3" />
-                    <div class="orbit-caption">
-                    Caption Three.
-                    </div>
                 </li>
             </ul>
         </div>
