@@ -10,14 +10,13 @@
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('fonts/montserratalternates-regular-webfont.eot');
-    src: url('fonts/montserratalternates-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/montserratalternates-regular-webfont.woff') format('woff'),
-         url('fonts/montserratalternates-regular-webfont.ttf') format('truetype'),
-         url('fonts/montserratalternates-regular-webfont.svg#montserrat_alternatesregular') format('svg');
+    src: url('fonts/montserrat-regular-webfont.eot');
+    src: url('fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-regular-webfont.woff') format('woff'),
+         url('fonts/montserrat-regular-webfont.ttf') format('truetype'),
+         url('fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'Dosis';
@@ -36,21 +35,25 @@
 @import "../bower_components/foundation/scss/foundation";
 @import "icons";
 
-.top-head {
-    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+
+@import "home/01-header-section";
+@import "home/02-menu-section";
+@import "home/03-news-section";
+@import "home/04-library-section";
+@import "home/05-events-section";
+@import "home/06-footer-section";
+
+.social-network.section {
+    background-color: #F1F1F2;
 }
 
-.project-menu {
-    background-color: #f8f8f9;
 
-    .label {
-        background-color: #f1f1f2;
-        color: #000;
+
+.footer.section {
+    background-color: #000;
+    color: #666;
+
+    a:hover {
+        color: #fff;
     }
-}
-
-
-.label {
-    border: 2px solid #fff;
 }

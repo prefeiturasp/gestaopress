@@ -1,0 +1,52 @@
+.header.section {
+    padding: rem-calc(15) 0;
+    box-shadow: 2px 2px 2px 2px rgba(35,31,32,.2);
+
+    p, input {
+        margin-bottom: 0;
+        font-size: rem-calc(11);
+        line-height: rem-calc(11);
+    }
+
+    p {
+        text-transform: uppercase;
+        margin: rem-calc(5) 0;
+    }
+
+    .brand,
+    .newsletter {
+        border-right: 1px solid rgba(204,204,204,.3);
+    }
+
+    .logo.prefeitura {
+        float: right;
+        margin-top: rem-calc(23);
+    }
+
+    .email-newsletter {
+        width:80%;
+        display: inline-block;
+        border-radius: rem-calc(30);
+        background-color: #E6E7E8;
+        border:0;
+        height: auto;
+        color: #999;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .button-newsletter {
+        border: 2px solid #ccc;
+        color: #ccc;
+        background-color: #fff;
+        border-radius: rem-calc(35);
+        padding: rem-calc(7) rem-calc(6);
+    }
+
+    .twitter-follow-button,
+    .fb-like {
+        vertical-align: top;
+        margin-right: rem-calc(5);
+    }
+}
