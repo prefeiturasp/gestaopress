@@ -54,11 +54,15 @@ module.exports = function (grunt) {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
-                    '<%= yeoman.app %>/{,*/}*.html',
+                    '.tmp/{,*/}*.html',
                     '.tmp/styles/{,*/}*.css',
                     '<%= yeoman.app %>/images/{,*/}*'
                 ]
-            }
+            },
+            jade: {
+                files: ['<%= yeoman.app %>/{,*/}*.jade'],
+                tasks: ['jade']
+            },
         },
 
         // The actual grunt server settings
@@ -186,7 +190,7 @@ module.exports = function (grunt) {
         // Automatically inject Bower components into the HTML file
         'bower-install': {
             app: {
-                html: '<%= yeoman.app %>/index.html',
+                html: '.tmp/index.html',
                 ignorePath: '<%= yeoman.app %>/',
                 exclude: [ '<%= yeoman.app %>/bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap.js' ]
             }
@@ -234,7 +238,7 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= yeoman.dist %>'
             },
-            html: '<%= yeoman.app %>/index.html'
+            html: '.tmp/index.html'
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
@@ -242,7 +246,7 @@ module.exports = function (grunt) {
             options: {
                 assetsDirs: ['<%= yeoman.dist %>']
             },
-            html: ['<%= yeoman.dist %>/{,*/}*.html'],
+            html: ['.tmp/{,*/}*.html'],
             css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
         },
 
@@ -281,7 +285,7 @@ module.exports = function (grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: '<%= yeoman.dist %>',
+                    cwd: '.tmp',
                     src: '{,*/}*.html',
                     dest: '<%= yeoman.dist %>'
                 }]
@@ -369,6 +373,21 @@ module.exports = function (grunt) {
                 'imagemin',
                 'svgmin'
             ]
+        },
+
+        jade: {
+            dist: {
+                options: {
+                    pretty: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.app %>',
+                    dest: '.tmp',
+                    src: '*.jade',
+                    ext: '.html'
+                }]
+            }
         }
     });
 
@@ -381,6 +400,7 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'concurrent:server',
+            'jade',
             'autoprefixer',
             'connect:livereload',
             'watch'
@@ -413,6 +433,7 @@ module.exports = function (grunt) {
         'concurrent:dist',
         'autoprefixer',
         'requirejs',
+        'jade',
         'concat',
         'cssmin',
         'uglify',

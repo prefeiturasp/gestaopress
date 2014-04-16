@@ -1,0 +1,291 @@
+doctype html
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+head
+  meta(charset='utf-8')
+  title gestaopress
+  meta(name='description', content='')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  //Place favicon.ico and apple-touch-icon.png in the root directory
+  //build:css styles/vendor.css
+  //bower:css
+  //endbower
+  //endbuild
+  //build:css(.tmp) styles/main.css
+  link(rel='stylesheet', href='styles/main.css')
+  //endbuild
+  //build:js scripts/vendor/modernizr.js
+  script(src='bower_components/modernizr/modernizr.js')
+  //endbuild
+  style.
+    .project-1 li a,
+    .project-1 li ul li:before { color: #F05A28; }
+    .project-2 li a,
+    .project-2 li ul li:before { color: #F7931D; }
+    .project-3 li a,
+    .project-3 li ul li:before { color: #CCCC00; }
+    .project-4 li a,
+    .project-4 li ul li:before { color: #38B449; }
+    .project-5 li a,
+    .project-5 li ul li:before { color: #bbb; }
+    .label.project-1 { background-color: #fff; border-color: #F05A28; color: #F05A28; }
+    .label.project-2 { background-color: #fff; border-color: #F7931D; color: #F7931D; }
+    .label.project-1:hover { background-color: #F05A28; border-color: #F05A28; color: #fff; }
+    .label.project-2:hover { background-color: #F7931D; border-color: #F7931D; color: #fff; }
+body
+  <!--[if lt IE 10]>
+  p.browsehappy
+    | You are using an
+    strong outdated
+    | browser. Please
+    a(href='http://browsehappy.com/') upgrade your browser
+    | to improve your experience.
+  <![endif]-->
+  .header.section
+    .row
+      .small-5.columns.brand
+        img.logo.sp-aberta(src='/images/logo-sp-aberta.svg', alt='Logo da São Paulo Aberta')
+        img.logo.prefeitura(src='/images/logo-prefeitura.svg', alt='Logo da Prefeitura')
+      .small-3.columns.newsletter
+        form(action='')
+          p receba notícias
+          input#email.email-newsletter(type='text', name='email')
+          input.button-newsletter(type='submit', value='OK')
+      .small-4.columns
+        p siga nas redes sociais
+        .fb-like(data-href='http://saopauloaberta.com.br', data-layout='button', data-action='like', data-show-faces='false', data-share='false')
+        a.twitter-follow-button(href='https://twitter.com/spaberta', data-show-count='false', data-lang='pt', data-show-screen-name='false') Seguir @spaberta
+        .g-ytsubscribe(data-channel='spaberta')
+  .main-menu.section.row
+    .small-12.columns.small-centered.text-center
+      ul.menu
+        li
+          a(href='') entenda
+          ul.sub-menu
+            li
+              a(href='') entenda mais
+        li
+          a(href='') notícias
+        li
+          a(href='') agenda
+        li
+          a(href='') biblioteca
+        li
+          a(href='') contato
+  .project-menu.section
+    .row(data-equalizer='data-equalizer')
+      .small-2.columns.title-section(data-equalizer-watch='data-equalizer-watch')
+        p projetos:
+      .small-2.columns(data-equalizer-watch='data-equalizer-watch')
+        ul.project-1.main-project
+          li
+            a(href='') Projeto Mãe
+            ul.subs
+              li
+                a(href='') Sub projeto
+      .small-2.columns(data-equalizer-watch='data-equalizer-watch')
+        ul.project-2.main-project
+          li
+            a(href='') Projeto Mãe
+            ul.subs
+              li
+                a(href='') Sub projeto
+      .small-2.columns(data-equalizer-watch='data-equalizer-watch')
+        ul.project-3.main-project
+          li
+            a(href='') Projeto Mãe
+            ul.subs
+              li
+                a(href='') Sub projeto
+      .small-2.columns(data-equalizer-watch='data-equalizer-watch')
+        ul.project-4.main-project
+          li
+            a(href='') Projeto Mãe
+            ul.subs
+              li
+                a(href='') Sub projeto
+      .small-2.columns(data-equalizer-watch='data-equalizer-watch')
+        ul.project-5.main-project
+          li
+            a(href='') Projeto Mãe
+            ul.subs
+              li
+                a(href='') Sub projeto
+  block content
+    .featured-content
+      ul(data-orbit='data-orbit', data-options='bullets:false;slide_number:false;')
+        li
+          img(src='http://placehold.it/1500x470', alt='slide 1')
+        li.active
+          img(src='http://placehold.it/1500x470', alt='slide 2')
+        li
+          img(src='http://placehold.it/1500x470', alt='slide 3')
+    .news.section.row
+      .small-12.columns.title
+        h2 notícias
+      .small-8.columns.image
+        img(src='http://placehold.it/640x210', alt='legenda')
+      .small-4.columns.details
+        p.date 01.03.2014
+        h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        p.summary
+          | Est, itaque, saepe quae ullam molestiae expedita aut nostrum repellat doloribus quaerat nesciunt deleniti assumenda a quod voluptas at nihil incidunt aspernatur?
+        p.labels
+          a.round.label.project-1 Projeo 1
+          a.round.label.project-2 Projeo 2
+    .news.section.row
+      .small-4.columns.details
+        p.date 01.03.2014
+        h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        p.summary
+          | Est, itaque, saepe quae ullam molestiae expedita aut nostrum repellat doloribus quaerat nesciunt deleniti assumenda a quod voluptas at nihil incidunt aspernatur?
+        p.labels
+          a.round.label.project-1 Projeo 1
+          a.round.label.project-2 Projeo 2
+      .small-4.columns.details
+        p.date 01.03.2014
+        h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        p.summary
+          | Est, itaque, saepe quae ullam molestiae expedita aut nostrum repellat doloribus quaerat nesciunt deleniti assumenda a quod voluptas at nihil incidunt aspernatur?
+        p.labels
+          a.round.label.project-1 Projeo 1
+          a.round.label.project-2 Projeo 2
+      .small-4.columns.details
+        p.date 01.03.2014
+        h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        p.summary
+          | Est, itaque, saepe quae ullam molestiae expedita aut nostrum repellat doloribus quaerat nesciunt deleniti assumenda a quod voluptas at nihil incidunt aspernatur?
+        p.labels
+          a.round.label.project-1 Projeo 1
+          a.round.label.project-2 Projeo 2
+    .row
+      .small-5.text-center.small-centered.columns
+        a.see-more(href='#') ver todas as notícias
+    .row
+      .small-6.columns.events.section
+        .row
+          .small-12.columns.title-section
+            h2 agenda
+            p Confira as próximas pautas discutidas
+        .row
+          .event.small-12.columns
+            i.icon-calendario
+            h3 14.abril
+            p.name Audiência Regional PDE - Norte
+            p.labels
+              a.round.label.project-1 Projeo 1
+              a.round.label.project-2 Projeo 2
+          .event.small-12.columns
+            i.icon-calendario
+            h3 14.abril
+            p.name Audiência Regional PDE - Norte
+            p.labels
+              a.round.label.project-1 Projeo 1
+              a.round.label.project-2 Projeo 2
+        .row
+          .small-8.text-center.small-centered.columns
+            a.see-more(href='#') ver todos os eventos
+      .small-6.columns.libraries.section
+        .row
+          .small-12.columns.title-section
+            h2 biblioteca
+            p Todo material de apoio sobre legislação relativa a cidade.
+        .row
+          .item.small-12.library.columns
+            i.icon-biblioteca-multimidia
+            h3 Vídeo ‘making of’ do WorkshopII - Centro Diálogo Aberto
+            p.labels
+              a.round.label.project-1 Projeo 1
+              a.round.label.project-2 Projeo 2
+          .item.small-12.library.columns
+            i.icon-biblioteca-publicacoes
+            h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            p.labels
+              a.round.label.project-1 Projeo 1
+              a.round.label.project-2 Projeo 2
+        .row
+          .small-8.text-center.small-centered.columns
+            a.see-more(href='#') ver todos os arquivos
+    .social-network.section
+      .row
+        .small-4.columns
+          h2 facebook
+          .facebook.box
+            .fb-like-box(data-href='https://www.facebook.com/spaberta', data-width='235', data-height='350', data-colorscheme='light', data-show-faces='true', data-header='false', data-stream='false', data-show-border='false')
+        .small-4.columns
+          h2 twitter
+          .twitter.box
+            a.twitter-timeline(href='https://twitter.com/spaberta', data-widget-id='455846705749962752') Tweets by @spaberta
+        .small-4.columns
+          h2 youtube
+          .box.youtube.text-center
+            .small-12.video
+              h4 Título do video
+              iframe(width='260', height='146', src='//www.youtube.com/embed/ZMQd6VvLuDQ?list=PL9lcfPLHi1otEkI2Zg2TUS6Ox7W08iRgd', frameborder='0', allowfullscreen='allowfullscreen')
+            .small-12.video
+              h4 Título do video
+              iframe(width='260', height='146', src='//www.youtube.com/embed/ZMQd6VvLuDQ?list=PL9lcfPLHi1otEkI2Zg2TUS6Ox7W08iRgd', frameborder='0', allowfullscreen='allowfullscreen')
+            a(href='#') ver todos os vídeos
+      .row
+        .small-4.small-centered.columns.text-center
+          img(src='/images/fundo-predios.svg', alt='Paisagem de prédios no horizonte')
+  .footer.section
+    .row
+      .small-2.columns.col-logo
+        img(src='/images/rodape-logo-sp-aberta.svg', alt='Logo na vertical do São Paulo Aberta')
+      .small-4.columns.col-secretaria
+        img(src='/images/rodape-logo-prefeitura.svg', alt='Logo Prefeitura de São Paulo')
+        p Secretaria Municipal do Planejamento, Orçamento e Gestão (SEMPLA)
+        p Prefeitura de São Paulo
+        p Viaduto do Chá, 15 - 9º andar - Centro
+        p CEP 01002-020 - São Paulo - SP
+        p Telefone: 156
+      .small-4.columns.col-licenca
+        i.icon-creative-commons
+        p
+          | Todo o conteúdo do site está disponível sob licença
+          a(href='#') Creative Commons
+          | .
+        i.icon-dados-abertos
+        p
+          | O código deste site é livre, consulte nossa página sobre
+          a(href='#') desenvolvimento
+          | .
+      .small-2.columns.end.col-redes-sociais
+        ul.redes
+          li
+            a(href='#')
+              i.icon-facebook
+          li
+            a(href='#')
+              i.icon-twitter
+          li
+            a(href='#')
+              i.icon-youtube
+          li
+            a(href='#')
+              i.icon-compartilhar
+        ul.pages
+          li
+            a(href='#') regras
+          li
+            a(href='#') contato
+  //
+     build:js({app,.tmp}) scripts/main.js
+  script(data-main='scripts/main', src='bower_components/requirejs/require.js')
+  //
+     endbuild
+  #fb-root
+  script.
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=195247740668330";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  script(src='https://apis.google.com/js/platform.js')
+  script.
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
