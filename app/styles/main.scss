@@ -47,8 +47,56 @@
 .label {
     border: 2px solid #fff;
 }
+
+
+.section {
+    h2 {
+        text-transform: uppercase;
+        margin: 2rem 0 .5rem;
+    }
+}
+
+
+.news.section {
+    margin-bottom: rem-calc(20);
+}
+
+
+.details {
+    .date {
+        font-size: rem-calc(12);
+        color: #989898;
+    }
+    h3 {
+        font-size: rem-calc(15);
+        font-family: 'Montserrat';
+        margin: .5rem 0;
+        line-height: 1.4rem;
+    }
+    .summary {
+        font-size: rem-calc(13);
+        color: #666666;
+        line-height: 1.2rem;
+    }
+}
+
+
+
+
+
+
+
 .social-network.section {
     background-color: #F1F1F2;
+    box-shadow:inset 0px 2px 2px 2px rgba(35,31,32,.2);
+
+    .box {
+        height: rem-calc(350);
+        background-color: #fff;
+        padding: .5rem;
+        border-radius: 1rem;
+        margin-bottom: rem-calc(60);
+    }
 }
 
 
