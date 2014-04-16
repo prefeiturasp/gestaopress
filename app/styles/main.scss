@@ -46,42 +46,88 @@
 // label dos projetos
 .label {
     border: 2px solid #fff;
+    font-size: rem-calc(14);
+    padding: rem-calc(5) rem-calc(10);
 }
 
+.see-more {
+    display: inline-block;
+    margin: rem-calc(15) 0 rem-calc(35);
+    padding: rem-calc(10) rem-calc(35) 0;
+    border-top: 1px solid #F0F0F0;
+    text-transform: uppercase;
+    font-size: rem-calc(12);
+}
 
 .section {
     h2 {
         text-transform: uppercase;
         margin: 2rem 0 .5rem;
     }
+
+    .title-section {
+        margin-bottom: rem-calc(25);
+
+        p {
+            font-size: rem-calc(15);
+        }
+    }
+
+    .labels {
+        margin-top: rem-calc(5);
+    }
 }
 
+.events.section,
+.libraries.section {
+    i {
+        font-size: rem-calc(25);
+        margin-right: rem-calc(10);
+        color: #666666;
+        display: inline-block;
+    }
+
+    h3 {
+        font-size: rem-calc(20);
+        color: #666666;
+        display: inline-block;
+    }
+    .name {
+        font-size: rem-calc(13);
+        color: #666666;
+        margin-left: rem-calc(40);
+    }
+
+    .event,
+    .library {
+        margin-bottom: rem-calc(20);
+        .labels {
+            margin-left: rem-calc(40);
+        }
+    }
+}
 
 .news.section {
     margin-bottom: rem-calc(20);
+
+    .details {
+        .date {
+            font-size: rem-calc(12);
+            color: #989898;
+        }
+        h3 {
+            font-size: rem-calc(15);
+            font-family: 'Montserrat';
+            margin: .5rem 0;
+            line-height: 1.4rem;
+        }
+        .summary {
+            font-size: rem-calc(13);
+            color: #666666;
+            line-height: 1.2rem;
+        }
+    }
 }
-
-
-.details {
-    .date {
-        font-size: rem-calc(12);
-        color: #989898;
-    }
-    h3 {
-        font-size: rem-calc(15);
-        font-family: 'Montserrat';
-        margin: .5rem 0;
-        line-height: 1.4rem;
-    }
-    .summary {
-        font-size: rem-calc(13);
-        color: #666666;
-        line-height: 1.2rem;
-    }
-}
-
-
-
 
 
 
@@ -104,8 +150,52 @@
 .footer.section {
     background-color: #000;
     color: #666;
+    padding: rem-calc(55) 0;
 
     a:hover {
         color: #fff;
+    }
+
+    p {
+        line-height:1.2;
+        font-size: rem-calc(13);
+    }
+
+    .col-logo,
+    .col-secretaria,
+    .col-licenca,
+    .col-redes-sociais {
+        height: 130px
+    }
+    .col-logo,
+    .col-secretaria,
+    .col-licenca {
+        border-right: 1px solid rgba(240, 240, 240, .2);
+    }
+
+    .col-logo {
+        text-align: center;
+    }
+    .col-secretaria {
+        img {
+            margin-bottom: rem-calc(15);
+        }
+    }
+    .col-licenca {
+        i, p {
+            display: inline-block;
+        }
+        i {
+            vertical-align: top;
+            font-size: rem-calc(26);
+            margin: rem-calc(15) rem-calc(15) rem-calc(15) 0;
+        }
+        p {
+            margin: rem-calc(10) 0;
+            width: 80%;
+        }
+    }
+    .col-redes-sociais {
+
     }
 }
