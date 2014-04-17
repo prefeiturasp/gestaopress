@@ -12,6 +12,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-email:before {
+    content: "\e610";
+}
 .icon-youtube:before {
     content: "\e600";
 }

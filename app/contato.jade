@@ -1,0 +1,34 @@
+extends index
+
+block content
+  .row.section.page.contato
+    .small-12.columns
+      h2 contato
+      br
+      br
+      br
+      p Secretaria Municipal do Planejamento, Orçamento e Gestão (SEMPLA) <br/>
+        | Prefeitura de São Paulo<br/>
+        | Viaduto do Chá, 15 – 9º andar – Centro<br/>
+        | CEP 01002-020 – São Paulo – SP<br/>
+        | Atenção! Pedidos de serviço, obras, fiscalização ou vistorias não serão atendidos por este formulário e devem ser formalizados no Sistema SAC, da Central 156 ou nas Praças de Atendimento das Subprefeituras.
+      .row.section
+        .small-12.medium-5.columns
+          form
+            .row
+              .small-12.columns
+                label Nome
+                  input(type="text", placeholder="Seu nome")
+                label Email
+                  input(type="text", placeholder="Seu email")
+                label Mensagem
+                  textarea(placeholder="Sua mensagem")
+                button(type="submit", class="button small")
+                    i.icon-email
+                    | ENVIAR
+
+
+
+  br
+  br
+  br

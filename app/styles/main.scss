@@ -245,8 +245,40 @@
 .guia-de-tecnologias,
 .tv-sp-aberta,
 .plano-de-acao {
-    img {
-        margin: rem-calc(20) 0;
+    margin: rem-calc(20) 0;
+}
+
+.page {
+    margin: rem-calc(20) 0;
+
+    p {
+        font-size: rem-calc(15);
+        margin-bottom: rem-calc(15);
+
+        &.subtitle {
+            margin-bottom: 0;
+            font-size: rem-calc(20);
+        }
     }
 }
 
+
+.page.contato {
+
+    input,
+    textarea {
+        border-radius: rem-calc(15);
+        background-color: #E6E7E8;
+        border:none;
+        box-shadow: none;
+    }
+    .button {
+        padding: 0;
+        color: #666;
+        background: none;
+        i {
+            margin-right: rem-calc(10);
+            font-size: rem-calc(20);
+        }
+    }
+}

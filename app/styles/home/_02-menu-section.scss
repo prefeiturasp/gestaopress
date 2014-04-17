@@ -57,10 +57,11 @@ ul.menu li:hover ul.sub-menu {
 
     ul {
         display: block;
+        margin:0;
         li {
             margin: rem-calc(20) 0;
             display: inline-block;
-            padding: 0 rem-calc(15);
+            padding: 0 0 0 rem-calc(20);
             border-left: 1px solid rgba(204, 204, 204, .3);
             list-style: none;
             a {
