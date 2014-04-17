@@ -51,10 +51,35 @@ ul.menu li:hover ul.sub-menu {
 }
 
 
+.secondary-menu {
+    background-color: #f8f8f9;
+    box-shadow: -1px -1px 3px 2px rgba(35,31,32,.2);
+
+    ul {
+        display: block;
+        li {
+            margin: rem-calc(20) 0;
+            display: inline-block;
+            padding: 0 rem-calc(15);
+            border-left: 1px solid rgba(204, 204, 204, .3);
+            list-style: none;
+            a {
+                font-size: rem-calc(14);
+                color: #EC1C24;
+
+                &:hover {
+                    color: #231F20;
+                }
+            }
+        }
+    }
+}
+
 
 .project-menu {
     background-color: #f8f8f9;
     box-shadow: -1px -1px 3px 2px rgba(35,31,32,.2);
+    display: none;
 
     .title-section {
         background-color: #f1f1f2;
