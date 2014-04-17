@@ -1,4 +1,104 @@
 extends index
 
 block content
-    p teste
+  .row.section
+    .small-8.columns.content
+      h2 notícias
+
+      .row.news
+        .small-12.columns
+          p.date 16.04.2014
+          h3: a(href="noticia.html") Prefeitura regulamenta a criação de ‘parklets’ para ampliar oferta de espaços públicos na cidade
+          h4 Iniciativa visa a criação de espaços temporários com o objetivo humanizar e democratizar o uso da rua. O equipamento amplia e qualifica espaços de convivência que proporcionam maior interação social
+          a(href="noticia.html"): img(src='http://placehold.it/640x210', alt='legenda')
+          p.tags
+            span tags
+            a Audiências Públicas
+            |,
+            a Câmara Municipal
+            |,
+            a Instrumentos de Política Urbana
+            |,
+            a Nabil Bonduki
+            |,
+            a PDE
+            |,
+            a Plano Diretor Estratégico
+            |,
+            a Revisão Participativa
+
+      .row.news
+        .small-12.columns
+          p.date 01.03.2014
+          h3: a(href="noticia.html") Proposta de substitutivo é debatida em audiências públicas
+          h4 Próximos encontros já estão marcados para os dias 14, 15, 16 e 17 de abril, confira.
+          a(href="noticia.html"): img(src='http://placehold.it/640x210', alt='legenda')
+          p.tags
+            span tags
+            a Audiências Públicas
+            |,
+            a Câmara Municipal
+            |,
+            a Instrumentos de Política Urbana
+            |,
+            a Nabil Bonduki
+            |,
+            a PDE
+            |,
+            a Plano Diretor Estratégico
+            |,
+            a Revisão Participativa
+
+    .small-4.columns.sidebar
+      .row
+        .small-12.columns.projects
+          h5 notícias por projeto
+          p.labels
+            a.round.label.project-1 Projeo Mãe
+            a.round.label.project-2 Nome do Projeto
+            a.round.label.project-3 Subprojeto da Lapa
+            a.round.label.project-5 Projeto Pai
+            a.round.label.project-4 Ajuda com o Nome do Projeto
+        .small-12.columns.libraries
+          h2 biblioteca
+          p
+            | Todo material de apoio sobre legislação relativa a cidade.
+            br
+            | Assista vídeos e leia os artigos. Informe-se!
+          ul
+            li
+              a
+                i.icon-biblioteca-multimidia
+                | Multimídia
+            li
+              a
+                i.icon-biblioteca-publicacoes
+                | Publicações
+            li
+              a
+                i.icon-biblioteca-legislacao
+                | Legislação
+            li
+              a
+                i.icon-biblioteca-estudos
+                | Estudos
+        .small-12.columns.text-center
+          a.see-more(href='#') ver todos os arquivos
+
+        .small-12.columns.events
+          h2 agenda
+          p
+            | Confira as próximas pautas discutidas.
+          .row
+            .event.small-12.columns
+              i.icon-calendario
+              h3 14.abril
+              p.name Audiência Regional PDE - Norte
+
+            .event.small-12.columns
+              i.icon-calendario
+              h3 18.abril
+              p.name Audiência Regional PDE - Sul
+
+        .small-12.columns.text-center
+          a.see-more(href='#') ver todos os eventos

@@ -1,0 +1,56 @@
+.sidebar {
+
+    p {
+        font-size: rem-calc(15);
+        line-height: 1.2;
+    }
+
+    .label {
+        margin: 0 rem-calc(5) rem-calc(5) 0;
+    }
+
+    .projects {
+        margin-top: rem-calc(90);
+        h5 {
+            color: rgba(35,31,32,.5);
+            text-transform: uppercase;
+            margin-bottom: rem-calc(10);
+        }
+    }
+    .events {
+        .event {
+            margin-top: rem-calc(15);
+        }
+        i {
+            display: inline-block;
+            font-size: rem-calc(24);
+            margin-left: rem-calc(10);
+        }
+        .name {
+            color: #666;
+            font-size: rem-calc(13);
+            margin-left: rem-calc(40);
+        }
+        h3 {
+            color: #666;
+            display: inline-block;
+            font-size: rem-calc(20);
+            margin: rem-calc(5) 0;
+        }
+    }
+    .libraries {
+        ul {
+            margin: rem-calc(10) 0;
+            li {
+                list-style: none;
+                a {
+                    i {
+                        margin-right: rem-calc(10);
+                        font-size: rem-calc(24);
+                    }
+                }
+            }
+        }
+    }
+    .news {}
+}

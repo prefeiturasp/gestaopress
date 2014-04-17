@@ -32,8 +32,14 @@ head
     .project-5 li ul li:before { color: #bbb; }
     .label.project-1 { background-color: #fff; border-color: #F05A28; color: #F05A28; }
     .label.project-2 { background-color: #fff; border-color: #F7931D; color: #F7931D; }
+    .label.project-3 { background-color: #fff; border-color: #CCCC00; color: #CCCC00; }
+    .label.project-4 { background-color: #fff; border-color: #38B449; color: #38B449; }
+    .label.project-5 { background-color: #fff; border-color: #bbb; color: #bbb; }
     .label.project-1:hover { background-color: #F05A28; border-color: #F05A28; color: #fff; }
     .label.project-2:hover { background-color: #F7931D; border-color: #F7931D; color: #fff; }
+    .label.project-3:hover { background-color: #CCCC00; border-color: #CCCC00; color: #fff; }
+    .label.project-4:hover { background-color: #38B449; border-color: #38B449; color: #fff; }
+    .label.project-5:hover { background-color: #bbb; border-color: #bbb; color: #fff; }
 body
   <!--[if lt IE 10]>
   p.browsehappy
@@ -46,7 +52,7 @@ body
   .header.section
     .row
       .small-5.columns.brand
-        img.logo.sp-aberta(src='/images/logo-sp-aberta.svg', alt='Logo da São Paulo Aberta')
+        a(href="/"): img.logo.sp-aberta(src='/images/logo-sp-aberta.svg', alt='Logo da São Paulo Aberta')
         img.logo.prefeitura(src='/images/logo-prefeitura.svg', alt='Logo da Prefeitura')
       .small-3.columns.newsletter
         form(action='')
@@ -289,7 +295,7 @@ body
   //
      endbuild
   #fb-root
-  script.
+//  script.
     (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -297,6 +303,6 @@ body
     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=195247740668330";
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-  script(src='https://apis.google.com/js/platform.js')
-  script.
+//  script(src='https://apis.google.com/js/platform.js')
+//  script.
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');

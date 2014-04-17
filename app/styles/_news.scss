@@ -1,0 +1,50 @@
+.content {
+    h2 {
+        margin-bottom: rem-calc(30);
+    }
+    .news {
+        padding-bottom: rem-calc(30);
+        margin-bottom: rem-calc(40);
+        border-bottom: 1px solid #F0F0F0;
+        h3,
+        h4 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .date {
+            color: #989898;
+            font-size: rem-calc(12);
+        }
+        h3 {
+            font-size: rem-calc(24);
+            margin: rem-calc(15) 0;
+            a {
+                color: #231F20;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        h4 {
+            font-size: rem-calc(15);
+            color: #666666;
+        }
+        img {
+            margin: rem-calc(10) 0;
+        }
+        .tags {
+            color: #999999;
+            span {
+                text-transform: uppercase;
+                font-size: rem-calc(14);
+                font-family: "Dosis", sans-serif;
+                color: rgba(35,31,32,.5);
+                display: block;
+                margin-bottom: rem-calc(10);
+            }
+            a {
+                color: #999999;
+                font-size: rem-calc(13);
+            }
+        }
+    }
+}
