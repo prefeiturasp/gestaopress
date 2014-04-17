@@ -23406,3 +23406,56 @@ ul.menu li:hover ul.sub-menu {
   margin-right: 0.625rem;
   font-size: 1.25rem;
 }
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/gestaopress\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003288;
+  }
+}
+
+.share {
+  border-top: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
+  padding: 0.625rem 0;
+  margin: 0.625rem 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/gestaopress\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003293;
+  }
+}
+
+.share .title {
+  color: rgba(35, 31, 32, 0.5);
+  text-transform: uppercase;
+  margin-right: 0.625rem;
+  font-size: 0.875rem;
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/gestaopress\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003302;
+  }
+}
+
+.share .fb-share-button,
+.share .twitter-share-button,
+.share .g-plus {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0.625rem;
+}
