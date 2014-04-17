@@ -283,3 +283,25 @@
         }
     }
 }
+
+
+.share {
+    border-top: 1px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+    padding: rem-calc(10) 0;
+    margin: rem-calc(10) 0;
+    .title {
+        color: rgba(35,31,32,.5);
+        text-transform: uppercase;
+        margin-right: rem-calc(10);
+        font-size: rem-calc(14);
+        display: inline-block
+    }
+    .fb-share-button,
+    .twitter-share-button,
+    .g-plus {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: rem-calc(10);
+    }
+}
